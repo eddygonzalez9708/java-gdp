@@ -1,5 +1,7 @@
 package com.lambdaschool.javagdp;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +29,7 @@ public class CountryController {
     // return using the JSON format all of the countries alphabetized by name
 
     @GetMapping("/names")
-    public List<Country> names() {
+    public List<Country> all() {
         return countryrepos.findAll();
     }
 
@@ -35,7 +37,7 @@ public class CountryController {
     // return using the JSON format all of the countries sorted from most to least GDP
 
     @GetMapping("/economy")
-    public List<Country> economy() {
+    public List<Country> sortedGdps() {
         List<Country> sortedList = countryrepos.findAll();
         sortedList.sort(Comparator.comparingLong(Country::getGdp).reversed());
         return sortedList;
@@ -43,6 +45,23 @@ public class CountryController {
 
     // /total -
     // return the sum of all GDPs using the JSON format with country name being returned as Total
+
+    @GetMapping("/total")
+    public ObjectNode sumGdps() {
+        List<Country> countries = countryrepos.findAll();
+        Long total = 0L;
+
+        for (Country c : countries) {
+            total += c.getGdp();
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectNode totalGdps = mapper.createObjectNode();
+        totalGdps.put("id", 0);
+        totalGdps.put("country", total);
+
+        return totalGdps;
+    }
 
     // /gdp/{country name} -
     // return using the JSON format the record for that country.
