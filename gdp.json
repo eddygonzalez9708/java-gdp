@@ -1,0 +1,406 @@
+[
+  {
+    "country": "United States",
+    "gdp": 20513000
+  },
+  {
+    "country": "China",
+    "gdp": 13457267
+  },
+  {
+    "country": "Japan",
+    "gdp": 5070626
+  },
+  {
+    "country": "Germany",
+    "gdp": 4029140
+  },
+  {
+    "country": "United Kingdom",
+    "gdp": 2808899
+  },
+  {
+    "country": "France",
+    "gdp": 2794696
+  },
+  {
+    "country": "India",
+    "gdp": 2689992
+  },
+  {
+    "country": "Italy",
+    "gdp": 2086911
+  },
+  {
+    "country": "Brazil",
+    "gdp": 1909386
+  },
+  {
+    "country": "Canada",
+    "gdp": 1733706
+  },
+  {
+    "country": "South Korea",
+    "gdp": 1655608
+  },
+  {
+    "country": "Russia",
+    "gdp": 1576488
+  },
+  {
+    "country": "Spain",
+    "gdp": 1437047
+  },
+  {
+    "country": "Australia",
+    "gdp": 1427767
+  },
+  {
+    "country": "Mexico",
+    "gdp": 1199264
+  },
+  {
+    "country": "Indonesia",
+    "gdp": 1005268
+  },
+  {
+    "country": "Netherlands",
+    "gdp": 909887
+  },
+  {
+    "country": "Saudi Arabia",
+    "gdp": 769878
+  },
+  {
+    "country": "Turkey",
+    "gdp": 713513
+  },
+  {
+    "country": "Switzerland",
+    "gdp": 709118
+  },
+  {
+    "country": "Taiwan",
+    "gdp": 602678
+  },
+  {
+    "country": "Sweden",
+    "gdp": 554659
+  },
+  {
+    "country": "Poland",
+    "gdp": 549478
+  },
+  {
+    "country": "Belgium",
+    "gdp": 536055
+  },
+  {
+    "country": "Thailand",
+    "gdp": 490120
+  },
+  {
+    "country": "Argentina",
+    "gdp": 475429
+  },
+  {
+    "country": "Austria",
+    "gdp": 459401
+  },
+  {
+    "country": "Norway",
+    "gdp": 441439
+  },
+  {
+    "country": "United Arab Emirates",
+    "gdp": 432612
+  },
+  {
+    "country": "Iran",
+    "gdp": 430082
+  },
+  {
+    "country": "Nigeria",
+    "gdp": 397472
+  },
+  {
+    "country": "South Africa",
+    "gdp": 376679
+  },
+  {
+    "country": "Ireland",
+    "gdp": 366448
+  },
+  {
+    "country": "Israel",
+    "gdp": 365599
+  },
+  {
+    "country": "Hong Kong",
+    "gdp": 360315
+  },
+  {
+    "country": "Denmark",
+    "gdp": 354683
+  },
+  {
+    "country": "Malaysia",
+    "gdp": 347290
+  },
+  {
+    "country": "Singapore",
+    "gdp": 346621
+  },
+  {
+    "country": "Colombia",
+    "gdp": 336940
+  },
+  {
+    "country": "Philippines",
+    "gdp": 331678
+  },
+  {
+    "country": "Pakistan",
+    "gdp": 306987
+  },
+  {
+    "country": "Chile",
+    "gdp": 299887
+  },
+  {
+    "country": "Bangladesh",
+    "gdp": 286275
+  },
+  {
+    "country": "Finland",
+    "gdp": 276553
+  },
+  {
+    "country": "Egypt",
+    "gdp": 249471
+  },
+  {
+    "country": "Czech Republic",
+    "gdp": 244540
+  },
+  {
+    "country": "Vietnam",
+    "gdp": 241434
+  },
+  {
+    "country": "Romania",
+    "gdp": 239440
+  },
+  {
+    "country": "Portugal",
+    "gdp": 237962
+  },
+  {
+    "country": "Iraq",
+    "gdp": 230911
+  },
+  {
+    "country": "Peru",
+    "gdp": 228944
+  },
+  {
+    "country": "Greece",
+    "gdp": 218057
+  },
+  {
+    "country": "New Zealand",
+    "gdp": 205997
+  },
+  {
+    "country": "Algeria",
+    "gdp": 188342
+  },
+  {
+    "country": "Qatar",
+    "gdp": 188295
+  },
+  {
+    "country": "Kazakhstan",
+    "gdp": 184209
+  },
+  {
+    "country": "Hungary",
+    "gdp": 156393
+  },
+  {
+    "country": "Kuwait",
+    "gdp": 144523
+  },
+  {
+    "country": "Ukraine",
+    "gdp": 126390
+  },
+  {
+    "country": "Morocco",
+    "gdp": 118178
+  },
+  {
+    "country": "Angola",
+    "gdp": 114504
+  },
+  {
+    "country": "Ecuador",
+    "gdp": 107266
+  },
+  {
+    "country": "Slovakia",
+    "gdp": 106940
+  },
+  {
+    "country": "Puerto Rico",
+    "gdp": 104557
+  },
+  {
+    "country": "Venezuela",
+    "gdp": 96328
+  },
+  {
+    "country": "Sri Lanka",
+    "gdp": 92504
+  },
+  {
+    "country": "Kenya",
+    "gdp": 89591
+  },
+  {
+    "country": "Ethiopia",
+    "gdp": 83836
+  },
+  {
+    "country": "Oman",
+    "gdp": 81682
+  },
+  {
+    "country": "Dominican Republic",
+    "gdp": 81103
+  },
+  {
+    "country": "Guatemala",
+    "gdp": 79109
+  },
+  {
+    "country": "Syria",
+    "gdp": 77460
+  },
+  {
+    "country": "Myanmar",
+    "gdp": 71543
+  },
+  {
+    "country": "Luxembourg",
+    "gdp": 68993
+  },
+  {
+    "country": "Panama",
+    "gdp": 66031
+  },
+  {
+    "country": "Bulgaria",
+    "gdp": 63651
+  },
+  {
+    "country": "Uruguay",
+    "gdp": 60933
+  },
+  {
+    "country": "Costa Rica",
+    "gdp": 60816
+  },
+  {
+    "country": "Croatia",
+    "gdp": 59971
+  },
+  {
+    "country": "Belarus",
+    "gdp": 56934
+  },
+  {
+    "country": "Lebanon",
+    "gdp": 56709
+  },
+  {
+    "country": "Tanzania",
+    "gdp": 55645
+  },
+  {
+    "country": "Slovenia",
+    "gdp": 54969
+  },
+  {
+    "country": "Macau",
+    "gdp": 53961
+  },
+  {
+    "country": "Lithuania",
+    "gdp": 52468
+  },
+  {
+    "country": "Ghana",
+    "gdp": 51815
+  },
+  {
+    "country": "Serbia",
+    "gdp": 47564
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "gdp": 45875
+  },
+  {
+    "country": "Azerbaijan",
+    "gdp": 45592
+  },
+  {
+    "country": "Uzbekistan",
+    "gdp": 43303
+  },
+  {
+    "country": "Libya",
+    "gdp": 43236
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "gdp": 42692
+  },
+  {
+    "country": "Turkmenistan",
+    "gdp": 42764
+  },
+  {
+    "country": "Jordan",
+    "gdp": 41869
+  },
+  {
+    "country": "Paraguay",
+    "gdp": 41851
+  },
+  {
+    "country": "Bolivia",
+    "gdp": 41833
+  },
+  {
+    "country": "Tunisia",
+    "gdp": 41662
+  },
+  {
+    "country": "Bahrain",
+    "gdp": 39300
+  },
+  {
+    "country": "Cameroon",
+    "gdp": 38445
+  },
+  {
+    "country": "Latvia",
+    "gdp": 34286
+  },
+  {
+    "country": "Sudan",
+    "gdp": 33249
+  }
+]
