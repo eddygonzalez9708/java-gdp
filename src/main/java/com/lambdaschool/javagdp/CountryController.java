@@ -4,10 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Comparator;
 import java.util.List;
@@ -47,7 +44,7 @@ public class CountryController {
     // return the sum of all GDPs using the JSON format with country name being returned as Total
 
     @GetMapping("/total")
-    public ObjectNode sumGdps() {
+    public ObjectNode sumGDP() {
         List<Country> countries = countryrepos.findAll();
         Long total = 0L;
 
@@ -67,6 +64,32 @@ public class CountryController {
     // return using the JSON format the record for that country.
     // Must be spelled as in the data!
     // Log that someone looked up this country
+
+    @GetMapping("/gdp/{name}")
+    public ObjectNode getName(@PathVariable String name) {
+        List<Country> countries = countryrepos.findAll();
+
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectNode jsonObj = mapper.createObjectNode();
+
+        for (Country c : countries) {
+           if (c.getCountry().toLowerCase() == name.toLowerCase()) {
+               jsonObj.put("id", c.getId());
+               jsonObj.put("country", c.getCountry());
+               jsonObj.put("gdp", c.getGdp());
+               break;
+           }
+        }
+
+        if (jsonObj.size() == 0) {
+            throw new CountryNotFoundException(name);
+        }
+
+        CountryLog message = new CountryLog("Checked Country Name");
+        rt.convertAndSend(JavaGdpApplication.QUEUE_NAME, message.toString());
+
+        return jsonObj;
+    }
 
     // ### POST
     // /gdp - loads the data from the provided JSON file
