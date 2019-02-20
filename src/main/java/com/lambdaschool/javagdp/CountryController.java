@@ -68,6 +68,13 @@ public class CountryController {
     // Must be spelled as in the data!
     // Log that someone looked up this country
 
+    @GetMapping("/gdp/{name}")
+    public ObjectNode getname() {
+        List<Country> countries = countryrepos.findAll();
+        CountryLog message = new CountryLog("Checked Total GDPs");
+        rt.convertAndSend(JavaGdpApplication.QUEUE_NAME, message.toString());
+    }
+
     // ### POST
     // /gdp - loads the data from the provided JSON file
 
